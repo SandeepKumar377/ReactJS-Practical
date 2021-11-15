@@ -1,6 +1,8 @@
+import React, { forwardRef } from 'react';
+import Tippy from '@tippy.js/react'
 import './App.css';
-import React, { useState } from 'react';
-import Modal from 'react-modal'
+import 'tippy.js/dist/tippy.css'
+// import Modal from 'react-modal'
 // import { IconContext } from 'react-icons';
 // import { FaReact } from 'react-icons/fa'
 // import { MdAlarm } from 'react-icons/md'
@@ -18,7 +20,25 @@ import Modal from 'react-modal'
 // }
 // toast.configure()
 
-Modal.setAppElement('#root')
+// Modal.setAppElement('#root')
+
+const ColoredTooltip = () => {
+  return (
+    <span style={{ color: 'pink' }}>
+      Colored Componenet
+    </span>
+  )
+}
+const CustomChiled = forwardRef((props, ref) => {
+  return (
+    <div ref={ref}>
+      <div>First Line</div>
+      <div>Second Line</div>
+    </div>
+  )
+}
+)
+
 function App() {
 
   // const toastDemo=()=>{
@@ -30,7 +50,7 @@ function App() {
   //   toast(<CustomToast/>, {position: toast.POSITION.TOP_LEFT, autoClose:false})
   // }
 
-  const [modalIsOpen, setModalIsOpen] = useState(false)
+  // const [modalIsOpen, setModalIsOpen] = useState(false)
 
   return (
     <div>
@@ -48,7 +68,7 @@ function App() {
       {/* <h1>Toast Notifications Demo</h1>
       <button onClick={toastDemo} >Click here...</button> */}
 
-      <h1>Modal Demo</h1>
+      {/* <h1>Modal Demo</h1>
       <button onClick={() => setModalIsOpen(true)}>Show Modal</button>
       <Modal isOpen={modalIsOpen}
         onRequestClose={() => setModalIsOpen(false)}
@@ -61,11 +81,35 @@ function App() {
               color: 'green'
             }
           }}
-      >
-        <h2>Title</h2>
+      > */}
+      {/* <h2>Title</h2>
         <p>Modal Body</p>
         <button onClick={() => setModalIsOpen(false)}>Close Modal</button>
-      </Modal>
+      </Modal> */}
+      <div style={{ padding: '10px' }} >
+        <Tippy arrow={false} delay={1000} placement='right' content='Basic Tooltip' >
+          <button>Hover</button>
+        </Tippy>
+      </div>
+
+      <div style={{ padding: '20px' }} >
+        <Tippy content={<span style={{ color: 'yellow' }} >Colered</span>} >
+          <button>Hover</button>
+        </Tippy>
+      </div>
+
+      <div style={{ padding: '20px' }} >
+        <Tippy content={<ColoredTooltip />} >
+          <button>Hover</button>
+        </Tippy>
+      </div>
+
+      <div style={{ padding: '30px' }} >
+        <Tippy content={<ColoredTooltip></ColoredTooltip>} >
+          <CustomChiled></CustomChiled>
+        </Tippy>
+      </div>
+
     </div>
   );
 }
