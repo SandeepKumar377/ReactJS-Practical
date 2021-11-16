@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { CountupTest } from './component/CountupTest';
+import { CreditCardTest } from './component/CreditCardTest';
 import { IconsTest } from './component/IconsTest';
 import { IdleTimerTest } from './component/IdleTimerTest';
 import { ModalTest } from './component/ModalTest';
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <div>
+      <CreditCardTest />
       <ReactColorPicker />
       <IdleTimerTest />
       <CountupTest />
