@@ -11,6 +11,7 @@ export const CreditCardTest = () => {
 
     return (
         <div>
+            <h1>Credit Cards Demo</h1>
             <Cards
                 number={number}
                 name={name}
