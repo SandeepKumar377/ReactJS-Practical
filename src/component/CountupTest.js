@@ -3,7 +3,7 @@ import CountUp, { useCountUp } from "react-countup";
 
 export const CountupTest = () => {
     const countUpRef = React.useRef(null)
-    const {  start, pauseResume, reset, update } = useCountUp(
+    const { start, pauseResume, reset, update } = useCountUp(
         {
             ref: countUpRef,
             start: 0,
@@ -20,7 +20,7 @@ export const CountupTest = () => {
         <div>
             <h1>Countup Demo</h1>
             <div>
-                <h1><span ref={countUpRef}/></h1>
+                <h1><span ref={countUpRef} /></h1>
                 <button onClick={start} >Start</button>
                 <button onClick={reset} >Reset</button>
                 <button onClick={pauseResume} >Pause / Resume</button>
