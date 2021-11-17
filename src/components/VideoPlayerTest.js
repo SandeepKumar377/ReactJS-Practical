@@ -6,7 +6,7 @@ export const VideoPlayerTest = () => {
         <div>
             <h1>Video Player Demo</h1>
             <ReactPlayer
-                url='https://www.youtube.com/watch?v=Me1Gg082UCU'
+                url=''
                 controls
                 width='420px'
                 height='240px'

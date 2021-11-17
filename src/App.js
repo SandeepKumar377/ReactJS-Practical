@@ -7,6 +7,7 @@ import { IconsTest } from './components/IconsTest';
 import { IdleTimerTest } from './components/IdleTimerTest';
 import { ModalTest } from './components/ModalTest';
 import { ReactColorPicker } from './components/ReactColorPicker';
+import { SpinnersTest } from './components/SpinnersTest';
 import { TippyTooltip } from './components/TippyTooltip';
 import { ToastNotification } from './components/ToastNotification';
 import { VideoPlayerTest } from './components/VideoPlayerTest';
@@ -15,7 +16,8 @@ function App() {
 
   return (
     <div className="App">
-      <VideoPlayerTest/>
+      <SpinnersTest />
+      <VideoPlayerTest />
       <DatePickerTest />
       <CreditCardTest />
       <ReactColorPicker />
