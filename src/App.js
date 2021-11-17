@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import { CountupTest } from './component/CountupTest';
-import { CreditCardTest } from './component/CreditCardTest';
-import { DatePickerTest } from './component/DatePickerTest';
-import { IconsTest } from './component/IconsTest';
-import { IdleTimerTest } from './component/IdleTimerTest';
-import { ModalTest } from './component/ModalTest';
-import { ReactColorPicker } from './component/ReactColorPicker';
-import { TippyTooltip } from './component/TippyTooltip';
-import { ToastNotification } from './component/ToastNotification';
+import { CountupTest } from './components/CountupTest';
+import { CreditCardTest } from './components/CreditCardTest';
+import { DatePickerTest } from './components/DatePickerTest';
+import { IconsTest } from './components/IconsTest';
+import { IdleTimerTest } from './components/IdleTimerTest';
+import { ModalTest } from './components/ModalTest';
+import { ReactColorPicker } from './components/ReactColorPicker';
+import { TippyTooltip } from './components/TippyTooltip';
+import { ToastNotification } from './components/ToastNotification';
 
 function App() {
 
