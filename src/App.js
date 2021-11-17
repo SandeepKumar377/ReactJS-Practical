@@ -9,11 +9,13 @@ import { ModalTest } from './components/ModalTest';
 import { ReactColorPicker } from './components/ReactColorPicker';
 import { TippyTooltip } from './components/TippyTooltip';
 import { ToastNotification } from './components/ToastNotification';
+import { VideoPlayerTest } from './components/VideoPlayerTest';
 
 function App() {
 
   return (
-    <div>
+    <div className="App">
+      <VideoPlayerTest/>
       <DatePickerTest />
       <CreditCardTest />
       <ReactColorPicker />
