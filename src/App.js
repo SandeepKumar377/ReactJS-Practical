@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { LineChart } from './components/chart/LineChart';
 import { CountupTest } from './components/CountupTest';
 import { CreditCardTest } from './components/CreditCardTest';
 import { DatePickerTest } from './components/DatePickerTest';
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <div className="App">
+      <LineChart />
       <SpinnersTest />
       <VideoPlayerTest />
       <DatePickerTest />
